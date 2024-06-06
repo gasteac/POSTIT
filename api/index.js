@@ -16,7 +16,6 @@ import cookieParser from "cookie-parser";
 import path from "path";
 //esto va a setear las variables del .env en process.env osea en el entorno
 dotenv.config(); 
-
 // import cors from "cors";
 // importamos las rutas de user, auth, post y comment
 import userRoutes from "./routes/user.routes.js";
