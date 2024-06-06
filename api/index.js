@@ -2,7 +2,7 @@
  * @file Entry point of the API server
  * @module index
  */
-
+import bodyParser from "body-parser";
 // express es un framework de node que nos permite hacer un servidor web de manera más sencilla
 import express from "express";
 // mongoose es una librería que nos permite conectarnos a una base de datos de mongodb, y hacer queries de manera más sencilla
@@ -31,7 +31,7 @@ mongoose
 
 //esto es para que __dirname funcione en los módulos de ES6 (porque __dirname no existe en ES6)
 const __dirname = path.resolve();
-
+app.use(bodyParser.json()); app.use(bodyParser.urlencoded({ extended: true }));
 //Creamos una instancia de express que va a ser nuestro server y la guardamos con el nombre app
 const app = express();
 
