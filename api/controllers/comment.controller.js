@@ -9,6 +9,7 @@ export const createComment = async (req, res, next) => {
     if (req.user.id !== userId) {
       return next(errorHandler(401, "Unauthorized"));
     }
+    
     //creamos un nuevo comentario
     const newComment = new Comment({
       content,
