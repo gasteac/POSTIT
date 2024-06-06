@@ -22,7 +22,6 @@ import userRoutes from "./routes/user.routes.js";
 import authRoutes from "./routes/auth.routes.js";
 import postRoutes from "./routes/post.routes.js";
 import commentRoutes from "./routes/comment.routes.js";
-
 //nos conectamos a la bdd de mongodb mediante mongoose pasándole la url de la bdd que esta en .env
 mongoose
   .connect(process.env.MONGO)
