@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hiText {
+ 
+  color: transparent;
+  background: linear-gradient(135deg, #9c77f3, #5d55f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding: 0.5rem 0;
+}
+
+.group:focus-within .groupLabel {
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background: linear-gradient(135deg, #9c77f3, #5d55f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.ql-editor{
+  font-size: 1.05rem;
+}
+
